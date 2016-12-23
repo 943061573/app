@@ -1,0 +1,125 @@
+*{
+	margin:0;
+	padding:0;
+}
+input,button,select,textarea{outline:none;border:none;}
+textarea{resize:none}
+body{
+	background: #f2f2f2;
+	font-family: 微软雅黑;
+}
+.container{
+	height: 100%;
+	padding-top: 40px;
+	overflow: hidden;
+	/*position: relative;*/
+}
+.content{
+	width: 100%;
+	/*overflow: hidden;*/
+	background: #ffffff;
+	box-sizing: border-box;
+}
+.content>div{
+	height:60px;
+	width: 90%;
+	margin: 0 auto ;
+	padding:5px 0 5px 55px;
+	line-height: 60px;
+	/*box-sizing: border-box;*/
+}
+.content div:first-child{
+	background: url("../img/content_ID_icon@2x.png") no-repeat 20px 23px;
+	background-size: 25px;
+	border-bottom: 2px solid #ccc;
+}
+.content div:nth-child(2){
+	background: url("../img/content_verify_icon@2x.png") no-repeat 25px 18px;
+	background-size: 16px;
+	border-bottom: 2px solid #ccc;
+}
+.content div:nth-child(3){
+	background: url("../img/content_password_icon@2x.png") no-repeat 25px 21px;
+	background-size: 20px;
+	border-bottom: 2px solid #ccc;
+}
+.content div:nth-child(4){
+	background: url("../img/content_password_icon@2x.png") no-repeat 25px 21px;
+	background-size: 20px;
+	border-bottom: 2px solid #ccc;
+}
+.content div:last-child{
+	background: url("../img/content_position_icon@2x.png") no-repeat 21px 23px;
+	background-size: 25px;
+}
+.content div:last-child img{
+	display: inline-block;
+	width: 14px;
+	transform: rotate(-90deg);
+	margin-left: 7%;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.content div input{
+	width:55%;
+	height:30px;
+	font-size: 14px;
+	/*padding-left: 80px;*/
+}
+#btn{
+	width: 92%;
+	margin:20px auto 0 auto;
+	background: #ccc;
+	height: 68px;
+	border-radius: 10px;
+	font-size: 22px;
+	color: #ffffff;
+	text-align: center;
+	line-height:68px;
+	cursor: pointer;
+}
+#btn_code{
+	display: inline-block;
+	width: 80px;
+	margin-left: -13%;
+	background: #ea5404;
+	height: 26px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	line-height:26px;
+	cursor: pointer;
+}
+.foot{
+	text-align: center;
+	font-size: 14px;
+	margin-top: 30px;
+}
+.foot a{
+	color: red;
+	font-size: 16px;
+}
+.menu{
+	/*border:2px solid red;*/
+	position: absolute;
+	top:60%;
+	right:12%;
+	display: none;
+}
+.menu ul li{
+	list-style: none;
+	width: 70px;
+	height: 30px;
+	background: #999;
+	color: #fff;
+	margin-top: 3px;
+	text-align: center;
+	line-height: 30px;
+}
+.menu ul li:first-child{
+	border-radius: 5px 5px 0 0;
+}
+.menu ul li:last-child{
+	border-radius: 0 0 5px 5px ;
+}

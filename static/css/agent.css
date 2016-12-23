@@ -1,0 +1,94 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"Microsoft Yahei";
+}
+input,button,select,textarea{outline:none;}
+textarea{resize:none}
+body{
+	background: #f2f2f2;
+}
+.container{
+	overflow: hidden;
+}
+.content,.content2{
+	background: #ffffff;
+}
+.content div{
+	margin-top: 10px;
+}
+.content2 div{
+	 height:60px;
+	 margin-top: 10px;
+ }
+.content>div:last-child{
+	padding-bottom: 10px;
+}
+.content div input,.content2 div input{
+	display: block;
+	width:60%;
+	margin: 0 auto ;
+	height:40px;
+	border-radius: 5px;
+	background: #eee;
+	border:1px solid #ccc;
+}
+.add{
+	width: 120px;
+	border-bottom: 1px solid #eee;
+	margin: auto ;
+	color: #f1f1f1;
+	padding: 5px 0;
+}
+.add-p{
+	width:70px;
+	height:70px;
+	line-height: 70px;
+	text-align: center;
+	border-radius: 50%;
+	background: #878787;
+	margin: auto;
+}
+.p{
+	height:40px;
+	line-height: 40px;
+	color: #999;
+	padding-left: 50px;
+	border-top:1px solid #ccc;
+}
+#btn{
+	width: 92%;
+	margin:40px auto 0 auto;
+	background: #ea5404;
+	height: 68px;
+	border-radius: 10px;
+	font-size: 22px;
+	color: #ffffff;
+	text-align: center;
+	line-height:68px;
+	cursor: pointer;
+}
+.content2{
+	overflow: hidden;
+}
+.content2 ul{
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom:10px;
+}
+.content2 ul li{
+	list-style: none;
+	float: left;
+}
+.content2 ul li{
+	display: block;
+	width:30%;
+	margin-left: 2%;
+	height:60px;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	text-align: center;
+	line-height: 60px;
+	background: #878787;
+	color: #f1f1f1;
+}

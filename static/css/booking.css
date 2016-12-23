@@ -1,0 +1,116 @@
+body{
+	background: #f2f2f2;
+	font-family: 微软雅黑;
+}
+ul li {
+	list-style: none;
+}
+.head{
+	height:50px;
+	text-align: center;
+	background: #ffffff ;
+	line-height: 50px;
+}
+.container-box{
+	width: 100%;
+	position: relative;
+	margin-top: 10px;
+	/*overflow-x: hidden;*/
+	background: #fff;
+	padding-bottom: 10px;
+}
+.flex-box2{
+	margin-bottom: 10px;
+}
+.flex-box2 ,.flex-box2-top,.flex-box2-bottom{
+	display: flex;
+}
+.flex-box2>li{
+	list-style: none;
+	height:100px;
+}
+.flex-box2>li:first-child{
+	flex:2;
+	height:100px;
+	background: url("../img/content_img@2x.png") no-repeat center;
+	background-size: 90px;
+}
+.flex-box2>li:last-child{
+	flex:5;
+}
+.flex-box2>li>ul{
+	padding-left: 10px;
+}
+.flex-box2>li>ul>li:nth-child(2){
+	text-indent: 1em;
+	display: inline-block;
+	width: 90%;
+	margin: auto;
+}
+.flex-box2>li>ul>li:nth-child(3){
+	height:25px;
+	line-height: 25px;
+	text-align: left;
+	color: orange ;
+	font-size: 9pt;
+}
+.flex-box2-top li:first-child{
+	flex:6;
+	padding-top: 5px;
+	font-size: 15px;
+}
+.flex-box2-top li:last-child{
+	flex:5;
+	width: 28px;
+	background: url("../img/content_icon@2x.png") no-repeat 13px 11px;
+	background-size: 10px;
+	padding:9px 0 0 15px;
+	font-size: 10pt;
+	height:15px;
+	line-height: 15px;
+	text-align: center;
+}
+.cb-bottom{
+	margin-top: -15px;
+	padding: 0 20px;
+	overflow: hidden;
+}
+.cbb-right{
+	width: 50px;
+	height:20px;
+	background: #d80101;
+	border-radius: 5px;
+	color: #fff;
+	line-height: 20px;
+	text-align: center;
+	font-size: 11pt;
+	float:right;
+}
+.boss{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:68px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.active2{
+	height: 68px;
+	line-height: 98px;
+	background: url("../img/bottom_press_icon03@2x.png") no-repeat center 10px;
+	background-size: 21px;
+	color: red;
+}
+.del-btn{
+	position: absolute;
+	right:-100px;
+	top:0;
+	background: #ea5404;
+	width: 100px;
+	height:125px;
+	color: #fff;
+	line-height: 125px;
+	text-align: center;
+}
+

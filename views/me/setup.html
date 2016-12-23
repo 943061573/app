@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优房多 - 杭州瑞烁网络科技股份有限公司</title>
+    <meta name="keywords" content="杭州瑞烁网络科技股份有限公司"/>
+    <meta name="description" content="杭州瑞栎网络科技有限公司成立于2015年是一家专注于专业市场电子商务公司
+杭州瑞栎网络科技有限公司成立于2015年， 公司主要经营教育软件 多媒体技术 游戏软件 计算机数据处理技术 计算机系统集成 教育信息咨询，公司秉承与客户共赢理念，为企业提供高效、务实的互联网营销服务，在专业市场的电子商务建设领域具有独特优势和丰富经验。"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="//cdn.bootcss.com/weui/1.0.2/style/weui.min.css">
+	<link rel="stylesheet" href="../../static/css/common.css">
+	<style>
+		.need,.about,.clearcache,.btn{
+			background: #fff;
+			height:50px;
+			line-height: 50px;
+			padding: 0 15px ;
+			margin-top: 10px;
+		}
+		.ab-right,.cc-right{
+			position: relative;
+			background: url("../../static/img/log%20in_right_icon@2x.png") no-repeat right;
+			background-size:11px;
+		}
+		.btn{
+			margin-top: 20px;
+			text-align: center;
+		}
+		.liuliang{
+			color: #ccc;
+			display: inline-block;
+			font-size: 10pt;
+			position: absolute;
+			top:1px;
+			right:25px;
+		}
+		.need-box{
+			float: right;
+			background: #d50000;
+			width: 70px;
+			height:40px;
+			border-radius: 40px;
+			margin-top: 5px;
+		}
+		.round{
+			width: 40px;
+			height:40px;
+			border-radius: 50%;
+			background: #fff;
+			box-shadow: inset 0 -3px 2px #ccc;
+		}
+		.needs-box-active{
+			background: #ccc;
+		}
+		.round-active{
+			transform: translate(30px);
+		}
+		.all{
+			position: fixed ;
+			left:0;
+			right:0;
+			top:0;
+			bottom:0;
+			background: rgba(34, 34, 34, 0.52);
+			display: none;
+		}
+		.container{
+			width: 90%;
+			height:200px;
+			position: absolute;
+			left:5%;
+			top:40%;
+			background: #fff;
+			border-radius:15px;
+			z-index: 10;
+			font-size: 20px;
+		}
+		.container-top{
+			height:120px;
+			line-height: 120px;
+			text-align: center;
+			font-size: 20px;
+		}
+		.container-top:after{
+			content:'';
+			position: absolute;
+			bottom: 80px;
+			left: 0;
+			right: 0;
+			height:1px;
+			background-color: #ccc;
+			display: inline-block;
+		}
+		.flex{
+			display: flex;
+			width: 100%;
+			height: 80px;
+			text-align: center;
+			font-size: 26px;
+		}
+		.flex-left{
+			flex: 1;
+			height:100%;
+			line-height: 80px;
+			border-right:1px solid #cccccc;
+		}
+		.flex-right{
+			flex:1;
+			height:100%;
+			line-height: 80px;
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<ul class="top">
+		<li id="back"></li>
+		<li><b>设置</b></li>
+		<li></li>
+	</ul>
+	<div class="need">
+		<div>
+			<span>接收需求</span>
+			<div class="need-box">
+				<div class="round"></div>
+			</div>
+		</div>
+	</div>
+	<div class="about">
+		<div class="ab-right">
+			关于
+		</div>
+	</div>
+	<div class="clearcache">
+		<div class="cc-right">
+			<span>清除缓存</span>
+			<span class="liuliang">10.03M</span>
+		</div>
+
+	</div>
+	<div class="btn">退出登录</div>
+	<div class="all">
+		<div class="container">
+			<div class="container-top">您确定要清除缓存吗?</div>
+			<div class="flex">
+				<div class="flex-left">取消</div>
+				<div class="flex-right">确定</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$('.btn' ).click(function(){
+	sessionStorage.name = '';
+	location.href = 'me.html';
+});
+$('#back' ).click(function(){
+	history.back();
+});
+$('.round' ).click(function(){
+	$(this ).toggleClass('round-active');
+	$(this ).parent().toggleClass('needs-box-active');
+});
+$('.clearcache' ).click(function(){
+	$('.all' ).show();
+});
+$('.flex-left' ).click(function(){
+	$('.all' ).hide();
+});
+$('.flex-right' ).click(function(){
+	$('.all' ).hide();
+	$('.liuliang' ).text('0.00M');
+});
+$('.about' ).click(function(){
+	location.href = 'about.html';
+})
+</script>
+</html>
